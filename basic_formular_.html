@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formular_basic_validation</title>
+
+<link rel="stylesheet" href="basic_form_validation_STYLE.css">
+
+</head>
+
+<!-- »:◊: basic formular validation :◊:« -->
+<body>
+
+<section>
+
+<!--  name ! all elements here for the js FormData()interface !  -->
+<div class="form-container">
+
+    <form id="formular">
+
+        <p id="headline">Register Me!</p>
+
+        <ul>
+
+            <li class="li-items">
+                <label for="first-name" id="fn-label">first-name :</label>
+                <input id="first-name" class="input" type="text" name="first-name: " 
+                value="" required placeholder="first-name">
+            </li>
+
+            <li class="li-items">
+                <label for="last-name" id="ln-label">last-name :</label>
+                <input id="last-name" class="input" type="text" name="last-name: " 
+                value="" required placeholder="last-name">
+            </li>
+
+            <li class="li-items">
+                <label for="mail" id="mail-label">e-mail :</label>
+                <input id="mail" class="input" type="email" value="" name="e-mail: " 
+                required placeholder="e-mail">
+            </li>
+
+            <li class="li-items">
+                <label for="news-on" id="news-label">newsletter</label>
+                <input type="checkbox" class="newsletter" 
+                id="news-on" name="newsletter: "></input>
+            </li>
+<!-- dont name the elements with thier functions- example: no submit in the name for submit button -->
+            <li>
+                <button type="submit" id="btn-send" 
+                name="btn-send">submit</button>
+            </li>
+
+            <li>
+                <button type="reset" id="btn-res" 
+                name="btn-res">reset</button>
+            </li>
+
+        </ul>
+
+    </form>
+   
+</section>
+
+</div>
+
+
+<!-- ::::::◊:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::◊::::::: -->
+
+<script src="basic_form_SCRIPT.js"></script>
+
+</body>
+</html>
